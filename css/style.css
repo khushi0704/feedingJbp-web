@@ -7,13 +7,14 @@
 }
 .logo{
     margin-left: 15px;
-    color: rgb(166, 221, 39);
+    color: rgb(38, 39, 37);
+    font-weight: bolder;
     font-size: 36px;
     font-family: 'Oswald', sans-serif;
     line-height: 70px;
  }
  .navbar{
-     background-color: black;
+     background-color: rgb(88, 170, 67);
  }
  .navbold{
      font-style: italic;
@@ -28,23 +29,69 @@ nav ul {
  }
  nav ul li a{
      font-family: 'Oswald', sans-serif;
-    color: rgb(216, 200, 200);
+    color: rgb(6, 51, 5);
     font-size:19px  ;
+    font-weight: bolder;
   
  }
  nav a:hover{
     display: block;
-    color: rgba(153, 250, 158, 0.705);
+    color: white;
  }
+
+/* Home styling */
+.HomeBanner{
+   height: 500px;
+   font-family: Okra,Helvetica,sans-serif;
+   background-image: url(../images/home.jpg);
+   background-position: center center;
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   background-size: cover;
+   
+   background-color: #464646;
+}
+.HomeBanner h2 { 
+   font-size: 40px;
+   position: absolute; 
+   color: white;
+   top: 140px; 
+   left: 30px; 
+}
+.HomeBanner h6 { 
+   font-size: 20px;
+   position: absolute; 
+   color: white;
+   top: 200px; 
+   left: 30px; 
+}
+.button {
+   background-color: #c74141;
+   cursor: pointer;
+   color: rgb(255, 253, 253);
+   padding: 10px 25px;
+   text-align: center;
+   display: inline-block;
+   font-size: 16px;
+   position: absolute; 
+   border: none;
+   border-radius: 10px;
+   top: 250px; 
+   left: 40px; 
+ }
+ .button:hover{
+    background-color: white;
+    color: black;
+ }
+ 
  @media screen and (max-width: 600px) {
      /* navbar*/
      .logo{
         font-size: 20px;
         font-family: 'Oswald', sans-serif;
-        line-height: 70px;
+        line-height: 50px;
      }
     nav ul li a{
-        color: blanchedalmond;
         font-size: 12px;
  }
  nav ul li{
@@ -57,4 +104,24 @@ nav ul {
         text-align: center;
         transition: all .5s;
     }
+    .HomeBanner{
+      height: 300px;
+      background-image: url(../images/home2.jpg);
  }
+ .HomeBanner h2 { 
+   font-size: 21px;
+   top: 130px; 
+   left: 20px; 
+}
+.HomeBanner h6 { 
+   font-size: 13px;
+   top: 170px; 
+   left: 20px; 
+}
+.button {
+   padding: 5px 12px;
+   font-size: 12px;
+   top: 230px; 
+   left: 20px; 
+ }
+}
