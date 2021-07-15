@@ -305,8 +305,8 @@ nav ul {
    left: 20px; 
 }
 .button {
-   padding: 5px 12px;
-   font-size: 12px;
+   padding: 5px 8px;
+   font-size: 18px;
    top: 230px; 
    left: 20px; 
  }
@@ -320,14 +320,13 @@ nav ul {
  #features ul {
    margin-top: 0;
   padding :25px 25px ;
-
 }
 #features ul li {
   font-size: small;
   padding-bottom: 30px;
   width: 200px;
   padding-top: 100px;
-  margin-left: 15px;
+  margin-left: 50px;
 }
 
 .gallery .box-container .box{
@@ -349,7 +348,7 @@ nav ul {
  .contact .btn{
    padding:.3rem 1rem;
    cursor: pointer;
-   margin-left:70px;
+   margin-left:100px;
    font-size: 1rem;
  }
  .contact .row form .inputBox input, .contact .row form textarea{
