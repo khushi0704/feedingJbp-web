@@ -6,9 +6,9 @@
 }
 /*form style*/
 .hero{
+   background: url(../images/p1.jpg);
     height: 100%;
     width: 100%;
-    background-image: url(../images/banner.jpg);
     background-size: cover;
     position: absolute;
  }
@@ -19,13 +19,15 @@
     margin:6% auto;
     overflow: hidden;
     padding: 5px;
-    background-color: white;
+ background: white;
+    box-shadow: 0 0 20px 9px #4cc71cb6;
+  
  }
  .button-box{
     width: 220px;
     margin:35px auto;
     position: relative;
-    box-shadow: 0 0 20px 9px #ff61241f;
+    box-shadow: 0 0 20px 9px #4cc71c42;
    border-radius: 30px;
  }
  .toggle-button{
@@ -99,3 +101,8 @@ span{
 #register{
     left:450px;
 }
+@media screen and (max-width: 600px) {
+    .hero{
+       background: none;
+    }
+ }
