@@ -253,7 +253,15 @@ nav ul {
  .brand-container{
    text-align: center;
  }
- 
+ .foot-lower{
+   background-color: rgb(41, 15, 15);
+  display: flex;
+  color: #f7f7f7;
+  justify-content: space-between;
+  text-align: center;
+  margin-left: 100px;
+  margin-right: 100px;
+}
  @media screen and (max-width: 600px) {
      /* navbar*/
      .logo-img{
