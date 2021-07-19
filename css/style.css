@@ -301,7 +301,6 @@ nav ul {
    text-transform: none;
  }
  
- 
  .contact .row form textarea{
    height: 15rem;
    resize: none;
@@ -321,15 +320,19 @@ nav ul {
    font-family: 'Poppins', sans-serif;
    justify-content: space-between;
  }
+ footer .footer-main{
+   margin:0 auto;
+   display: flex;
+ }
  footer .footer-about{
  width: 40%;
   }
-footer .footer-main .footer-about h2{
+footer .footer-main h2{
   position: relative;
   color: #fff;
   margin-bottom: 15px;
 }
-footer .footer-main .footer-about h2:before
+footer .footer-main h2:before
 {
   content: '';
   position: absolute;
@@ -339,14 +342,73 @@ footer .footer-main .footer-about h2:before
   height: 2px;
   background: #f00;
 }
+footer p{
+  color: #999;
+}
+.sci{
+margin-top: 20px;
+display: flex;
+}
+.sci li{
+  list-style: none;
+}
+.sci li a{
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background-color: #222;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  text-decoration: none;
+  border-radius: 10px;
+}
+.sci li a:hover{
+  background-color: #f00;
+}
+.sci li a .fa{
+  color: #fff;
+  font-size: 20p;
+}
+.quickLinks{
+  position: relative;
+  width: 30%;
+}
+.quickLinks ul li{
+list-style: none;
+}
+.quickLinks ul li a{
+  color: #999;
+  text-decoration: none;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+.quickLinks ul li a:hover{
+  color: #fff;
+}
+.sec-contact .info li{
+  list-style: none;
+  margin:10px;
+}
+.sec-contact span{
+  color:#999;
+}
  .foot-lower{
-   background-color: rgb(41, 15, 15);
+  background-color: rgb(41, 15, 15);
   display: flex;
   color: #f7f7f7;
   justify-content: space-between;
   text-align: center;
   margin-left: 100px;
   margin-right: 100px;
+}
+.copyrightText{
+  width: 100%;
+  background:#181818;
+  padding: 8px 100px;
+  text-align: center;
+  color: #999 ;
 }
  @media screen and (max-width: 600px) {
      /* navbar*/
@@ -402,7 +464,7 @@ nav ul li a:before
 }
 .button {
    padding: 5px 8px;
-   font-size: 18px;
+   font-size: 13px;
    top: 230px; 
    left: 20px; 
  }
@@ -476,5 +538,29 @@ nav ul li a:before
    margin-left: 20px;
    width:90%;
  }
- 
+ footer{
+   padding: 40px;
+ }
+ footer .footer-main h2:before
+{
+  left: auto;
+  width: 60px;
+}
+.sci{
+margin-left: 45px;
+  }
+ footer .footer-main{
+ text-align: center;
+   flex-direction: column;
+ }
+ footer .footer-main .quickLinks{
+  width: 100%;
+ }
+ footer .footer-main .footer-about{
+width: 100%;
+ }
+ .copyrightText{
+  width: 100%;
+  padding: 10px;
+}
 }
