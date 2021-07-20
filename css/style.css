@@ -6,6 +6,10 @@
     box-sizing: border-box;
     text-decoration: none;
 }
+html{
+  scroll-behavior: smooth;
+}
+
 .logo-img{
   float: left;
   position: relative;
