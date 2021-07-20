@@ -79,9 +79,7 @@ nav ul {
    background-image: url(../images/p4.jpg);
    background-position: center center;
    background-repeat: no-repeat;
-   background-attachment: fixed;
    background-size: cover;
-   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
    background-color: #464646;
 }
 .HomeBanner h2 { 
@@ -118,8 +116,6 @@ nav ul {
    left: 40px; 
  }
  .button:hover{
-    background-color: white;
-    border: 2px solid #54b228;
     color: black;
  }
  .head-info p{
@@ -376,10 +372,12 @@ display: flex;
   font-size: 20p;
 }
 .quickLinks{
+  margin-left: 40px;
   position: relative;
   width: 30%;
 }
 .quickLinks ul li{
+ 
 list-style: none;
 }
 .quickLinks ul li a{
@@ -414,7 +412,7 @@ list-style: none;
   text-align: center;
   color: #999 ;
 }
- @media screen and (max-width: 600px) {
+ @media screen and (max-width: 400px) {
      /* navbar*/
      .logo-img{
        width: 30px;
@@ -454,7 +452,6 @@ nav ul li a:before
 }
 .HomeBanner{
   height: 300px;
-  background-size: 800px 600px;
 }
 .HomeBanner h2 { 
  font-size: 21px;
@@ -516,9 +513,9 @@ nav ul li a:before
    width:70%;
   margin-left: 50px;
  }
- 
 .contact .row form{
-   padding:.7rem;
+  
+   padding:1rem;
  }
  
 .contact .btn{
@@ -561,11 +558,12 @@ margin-left: 65px;
 .quickLinks ul li a{
     margin-bottom: 5px;
   }
- footer .footer-main{
+ footer .footer-main{ 
  text-align: center;
    flex-direction: column;
  }
  footer .footer-main .quickLinks{
+  margin-left: 0;
   width: 100%;
  }
  footer .footer-main .footer-about{
