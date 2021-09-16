@@ -7,6 +7,9 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+   
    <link rel="icon" 
       type="image/png" 
       href="images/green-love.png">
@@ -28,8 +31,66 @@
     <div class="HomeBanner">
         <h2>#IamFeedingJabalpur</h2>
         <h6>When you donate food you don't just wipe out someone's hunger.You also donate smiles.</h6>
-        <a href="donate.html"  class="button">DONATE NOW</a>
+        
+    <!-- Button trigger modal -->
+<button type="button" class="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  
+ DONATE NOW
+</button>
+
+
+
+
+
+
+
+
+
+
     </div>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Donate | Feeding Jabalpur</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form method="post" action="//submit.form" onSubmit="return validateForm();">
+        <div style="max-width: 400px;"></div>
+        <div style="padding-bottom: 18px;font-size : 24px;">Feeding Jabalpur | Donation Box</div>
+        <div style="display: flex; padding-bottom: 18px;max-width : 550px;">
+            <div style=" margin-left: 0; margin-right: 1%; width: 49%;">First name<br/>
+                <input type="text" id="data_2" name="data_2" style="max-width: 100%;" class="form-control"/>
+            </div>
+            <div style=" margin-left: 1%; margin-right: 0; width: 49%;">Last name<br/>
+                <input type="text" id="data_3" name="data_3" style="max-width: 100%;" class="form-control"/>
+            </div>
+        </div>
+        <div style="padding-bottom: 18px;">Email<br/>
+        <input type="text" id="data_4" name="data_4" style="max-width : 550px;" class="form-control"/>
+        </div>
+        <div style="padding-bottom: 18px;">Donation Amount<span style="color: red;"> *</span><br/>
+            <span><input type="radio" id="data_5_0" name="data_5" value="$50"/> Rs.50</span><br/>
+            <span><input type="radio" id="data_5_1" name="data_5" value="$100"/> Rs.100</span><br/>
+            <span><input type="radio" id="data_5_2" name="data_5" value="$250"/> Rs.250</span><br/>
+            <span><input type="radio" id="data_5_3" name="data_5" value="$500"/> Rs.500</span><br/>
+        </div>
+        <div style="padding-bottom: 18px;">Full Address<br/>
+            <textarea id="data_6" false name="data_6" style="max-width : 550px;" rows="3" class="form-control"></textarea>
+        </div>
+<center>
+        <div style="padding-bottom: 18px;"><input name="skip_Submit"  class=" btn btn-primary"value="Submit" type="submit"/></div>
+</center>
+        
+</form>
+    </div>
+  </div>
+</div>
+
+
     <div id="features">
             <h1 class="heading">
                 <span>HOW</span>
@@ -218,5 +279,24 @@
          <p>© 2021 Feeding Jabalpur . All rights reserved</p>
      </div>
 </body>
+
+   <script type="text/javascript">
+        function validateForm() {
+        if (!validateEmail(document.getElementById('data_4').value.trim())) {
+        alert('Email must be a valid email address!');
+        return false;
+        }
+        if (!document.getElementById('data_5_0').checked && !document.getElementById('data_5_1').checked && !document.getElementById('data_5_2').checked && !document.getElementById('data_5_3').checked ) {
+        alert('Donation Amount is required!');
+        return false;}
+        return true;
+        }
+        function isEmpty(str) { return (str.length === 0 || !str.trim()); }
+        function validateEmail(email) {
+        var re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,15}(?:\.[a-z]{2})?)$/i;
+        return isEmpty(email) || re.test(email);
+        }
+        </script>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
 <script src="script/script.js"></script>
 </html>
