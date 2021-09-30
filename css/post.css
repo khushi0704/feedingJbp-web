@@ -25,7 +25,32 @@
     cursor: pointer;
 }
 .selfie{
-    float: right;
-    width: 50px;
-    height: 50px;
+    
+    width: 200px;
+    height: 200px;
 }
+.image-container{
+    align-content: center;
+    margin-top: 20px;
+    margin-left: 100px;
+    padding-left: 6px;
+
+}
+
+.heading{
+   text-align: center;
+   padding:2.5rem 0;
+   margin-top: 60px;
+ }
+ 
+ .heading span{
+    font-family: 'Courier New', Courier, monospace;
+   font-size: 3rem;
+   background:linear-gradient(to right,#4ece35,#06ff51);
+   color:var(--green);
+   border-radius: .5rem;
+   padding:.2rem 1rem;
+ }
+ .heading span.space{
+   background:none;
+ }
