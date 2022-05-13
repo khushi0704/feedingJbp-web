@@ -1,0 +1,22 @@
+{
+  "name": "feedingjbp-web",
+  "version": "1.0.0",
+  "description": "Feeding Jabalpur is an initiative to support the poor people in slums residing in Jabalpur.Users can click photos of the slums near their residence & post it in the website's feed,the most relevant posts will get featured on our website.Users will have the option to donate for those slums hence contributing to a social-cause.\r # Made with ❤ by [Khushi](https://khushi0704.github.io/portfolio1/).",
+  "main": "express.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/khushi0704/feedingJbp-web.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/khushi0704/feedingJbp-web/issues"
+  },
+  "homepage": "https://github.com/khushi0704/feedingJbp-web#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}
